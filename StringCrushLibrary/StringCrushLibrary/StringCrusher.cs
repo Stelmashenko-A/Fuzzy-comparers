@@ -16,6 +16,7 @@ namespace StringCrushLibrary
         private static string _chars = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890";
 
         private readonly Random _random = new Random();
+
         public double RemovedLettersMaxPercent { get; set; }
 
         public double ChangedLettersMaxPercent { get; set; }
