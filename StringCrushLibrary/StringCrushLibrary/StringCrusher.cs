@@ -25,9 +25,9 @@ namespace StringCrushLibrary
 
         public string CrushString(string str)
         {
-            var removedLetters = _random.Next(((int) (str.Length*RemovedLettersMaxPercent/100)) + 1);
-            var changedLetters = _random.Next(((int) (str.Length*ChangedLettersMaxPercent/100)) + 1);
-            var addedLetters = _random.Next(((int) (str.Length*AddedLettersMaxPercent/100)) + 1);
+            var removedLetters = _random.Next(((int) (str.Length*RemovedLettersMaxPercent/100)) + 2);
+            var changedLetters = _random.Next(((int) (str.Length*ChangedLettersMaxPercent/100)) + 2);
+            var addedLetters = _random.Next(((int) (str.Length*AddedLettersMaxPercent/100)) + 2);
             var sb = new StringBuilder(str);
             for (var i = 0; i < addedLetters; i++)
             {

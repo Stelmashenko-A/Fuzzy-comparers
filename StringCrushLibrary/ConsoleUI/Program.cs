@@ -12,7 +12,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            IStringJoiner stringJoiner=new HammingStringJoiner(new HammingEstimater(), 0.9994);
+            IStringJoiner stringJoiner=new HammingStringJoiner(new HammingEstimater(), 0.9998);
             IAnalyzer analyzer = new TextAnalyzer(stringJoiner,"G://test.txt");
             var r = analyzer.Analyze();
         }
