@@ -40,10 +40,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAnalyzer.cs" />
     <Compile Include="IDataCollector.cs" />
     <Compile Include="IStringColector.cs" />
+    <Compile Include="IStringPreparer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringColector.cs" />
+    <Compile Include="StringPreparer.cs" />
+    <Compile Include="TextAnalyzer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JoinerLibrary\JoinerLibrary.csproj">
+      <Project>{6ae0c50f-a424-4ff9-adb2-2e4250481c56}</Project>
+      <Name>JoinerLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringCrushLibrary\StringCrushLibrary.csproj">
+      <Project>{7643dcca-7162-4529-8cf6-150f2ffde3c8}</Project>
+      <Name>StringCrushLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
