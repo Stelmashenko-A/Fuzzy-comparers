@@ -5,7 +5,7 @@ using StringCrushLibrary;
 
 namespace DataAnalysisLibrary
 {
-    internal class TextAnalyzer : IAnalyzer
+    public class TextAnalyzer : IAnalyzer
     {
         private readonly IStringJoiner _joiner;
         private readonly string _path;

@@ -14,7 +14,7 @@ namespace DataAnalysisLibrary
 
         public IList<string> Collect()
         {
-            if (File.Exists(_path)) return null;
+            if (!File.Exists(_path)) return null;
             var readText = File.ReadAllLines(_path);
             return readText;
         }
